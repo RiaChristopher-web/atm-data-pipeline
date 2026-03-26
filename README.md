@@ -7,7 +7,6 @@ Steps:
 2. Run pipeline every hour.
 3. Apply business rules for state segregation.
 4. Store each state's data into separate database tables.
-5. Ready for AWS and Snowflake integration.
 
 Business Rules
 - Data segregated by STATE
@@ -19,4 +18,13 @@ Python
 Pandas
 SQLite
 AWS
-Snowflake
+
+Data Source
+
+This project uses an ATM dataset sourced from Kaggle.
+
+- The dataset was used to simulate a real-time ATM data feed.
+- Since a live REST API was not available, the dataset acts as a mock data source for pipeline development and testing.
+- The data is processed periodically to mimic hourly ingestion.
+
+Dataset Link: https://www.kaggle.com/datasets/akhshhh/atm-bob-transaction-dataset
